@@ -132,6 +132,7 @@ input:valid ~ label {
 
 /* Definindo que: quando o ponteiro passar em cima da tag '<a></a>', ele terá um underline (para dizer que é um link) */
 .forget label a:hover {
+  color: deepskyblue;
   text-decoration: underline;
 }
 
@@ -162,5 +163,6 @@ button {
 }
 
 .register p a:hover {
+  color: deepskyblue;
   text-decoration: underline;
 }
