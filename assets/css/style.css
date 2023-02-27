@@ -76,12 +76,6 @@ h2 {
   transition: 0.5s;
 }
 
-/* Definindo que: quando clicar no input, ele irá descer */
-input:focus ~ label,
-input:valid ~ label {
-  top: -5px;
-}
-
 /* Estilizando todo 'input' que seja filho da classe '.inputbox' */
 .inputbox input {
   /* Definindo a largura para '100%' e a altura de '50px' */
@@ -141,7 +135,8 @@ button {
   width: 100%;
   height: 40px;
   border-radius: 40px;
-  background-color: #fff;
+  background-color: dodgerblue;
+  color: #fff;
   border: none;
   outline: none;
   cursor: pointer;
