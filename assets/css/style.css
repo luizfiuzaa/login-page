@@ -16,7 +16,7 @@ section {
   min-height: 100vh;
   width: 100%;
   /* Definindo um Background */
-  background: url(../img/bg-img.jpg)no-repeat;
+  background: url(../img/bg-img.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -29,9 +29,9 @@ section {
   height: 450px;
   /* Definindo um Background para a classe '.form-box' */
   background: transparent;
-  border: 2px solid rgba(255,255,255,.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(50px);
   /* Centralizando os elementos que são filhos da classe '.form-box' */
   display: flex;
   justify-content: center;
@@ -55,13 +55,13 @@ h2 {
   /* Definindo largura da classe para '310px' */
   width: 310px;
   /* Definindo cor sólida de '2px' branca na borda inferior */
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid dodgerblue;
 }
 
 /* Estilizando todo o 'label' que esteja filho de '.inputbox' */
 .inputbox label {
   /* Definindo posicionamento absoluto sobre qualquer outro elemento*/
- position: absolute; 
+  position: absolute;
   /* Deixando o 'label' atrás do input */
   top: -5px;
   left: 5px;
@@ -142,6 +142,13 @@ button {
   cursor: pointer;
   font-size: 1em;
   font-weight: 600;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: dodgerblue 2px solid;
+  color: dodgerblue;
 }
 
 .register {
