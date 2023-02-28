@@ -1,14 +1,17 @@
-// Declarando constante as informações dos inputs e do botão
-const email = document.getElementById("email");
-const password = document.getElementById("password");
+// Declarando constante os botões
 const btn_proceed = document.getElementById("btn_proceed");
-
-// Variáveis para guardar email e senha para teste
-let dummy_email = "teste@exemplo.com";
-let dummy_password = "123";
+const btn_create = document.getElementById("btn_create")
 
 // Caso o botão seja clicado, vai executar uma arrow function
 btn_proceed.addEventListener("click", () => {
+  // Declarando constante as informações dos inputs e do botão
+  const email = document.getElementById("email");
+  const password = document.getElementById("password");
+
+  // Variáveis para guardar email e senha para teste
+  let dummy_email = "teste@exemplo.com";
+  let dummy_password = "123";
+
   // se o valor do input 'email' for igual ao do dummy verificar se:
   if (email.value == dummy_email) {
     // o valor do input 'password' for igual ao do dummy
@@ -26,3 +29,7 @@ btn_proceed.addEventListener("click", () => {
     alert("O email não é valido");
   }
 });
+
+btn_create.addEventListener("click", ()=>{
+  alert("conta criada")
+})

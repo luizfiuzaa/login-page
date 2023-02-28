@@ -1,0 +1,161 @@
+/* Importando a fonte 'Poppins' do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Oxygen:wght@700&display=swap");
+
+/* Todos os elementos */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  /* Centralizando todos os elementos filhos do elemento 'section' */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  /* Definindo um Background */
+  background: url(../img/bg-img.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form-box {
+  position: relative;
+  /* Definindo a largura para '400px' */
+  width: 400px;
+  /* Definindo a altura da classe '.form-box' para '450px' */
+  height: 450px;
+  /* Definindo um Background para a classe '.form-box' */
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  /* Centralizando os elementos que são filhos da classe '.form-box' */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  /* Ajustando o tamanho da fonte de acordo com a resolução do dispositivo */
+  font-size: 2em;
+  /* Definindo cor padrão para o elemento 'h2' */
+  color: #fff;
+  /* Definindo alinhamento centralizado para o elemento 'h2' */
+  text-align: center;
+}
+
+.inputbox {
+  /* Definindo posicionamento relativo para que se ajuste entre os elementos */
+  position: relative;
+  /* Definindo margem de '30px' */
+  margin: 30px 0;
+  /* Definindo largura da classe para '310px' */
+  width: 310px;
+  /* Definindo cor sólida de '2px' branca na borda inferior */
+  border-bottom: 2px solid orangered;
+}
+
+/* Estilizando todo o 'label' que esteja filho de '.inputbox' */
+.inputbox label {
+  /* Definindo posicionamento absoluto sobre qualquer outro elemento*/
+  position: absolute;
+  /* Deixando o 'label' atrás do input */
+  top: -5px;
+  left: 5px;
+  transform: translateY(-50%);
+  /* Definindo cor branca ao 'label' */
+  color: #fff;
+  /* Definindo o tamanho da fonte para '1em' */
+  font-size: 1em;
+  /* Desabilitando eventos do ponteiro */
+  pointer-events: none;
+  /* Definindo tempo de transição para '0.5s' */
+  transition: 0.5s;
+}
+
+/* Estilizando todo 'input' que seja filho da classe '.inputbox' */
+.inputbox input {
+  /* Definindo a largura para '100%' e a altura de '50px' */
+  width: 100%;
+  height: 50px;
+  /* Transformando o bg do input em transparente, tirando a borda e o contorno */
+  background: transparent;
+  border: none;
+  outline: none;
+  /* Tamanho da fonte para '1em', e ajustando o tamanho do input e a cor do texto digitado dentro do input para: branco */
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+/* Estilizando os ícones que são filhos da classe '.inputbox' */
+.inputbox ion-icon {
+  /* Posicionamento absoluto sobre os outros elementos */
+  position: absolute;
+  /* Ajustando o ícone para ficar no lado direito do input */
+  right: 8px;
+  top: 20px;
+  /* Mudando a cor da fonte para branca e o tamanho para '1.2em' */
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.forget {
+  /* Ajustando a área de recuperar a senha */
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: center;
+  /* mudando a fonte para '0.9em' e a cor para: branca */
+  font-size: 0.9em;
+  color: #fff;
+}
+
+/* Afastando em '3px' o checkbox do label */
+.forget label input {
+  margin-right: 3px;
+}
+
+/* Definindo a cor do texto para branca e tirando a decoração do elemento '<a></a>' */
+.forget label a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Definindo que: quando o ponteiro passar em cima da tag '<a></a>', ele terá um underline (para dizer que é um link) */
+.forget label a:hover {
+  color: deepskyblue;
+  text-decoration: underline;
+}
+
+button {
+  /* Definindo a largura para ocupar '100%' do form */
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: orangered 2px solid;
+  color: orangered;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover a {
+  color: orangered;
+}

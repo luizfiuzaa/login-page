@@ -5,40 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WELCOME!! :: SIGN IN</title>
-    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="assets/css/register.css" />
   </head>
   <body>
     <section>
       <div class="form-box">
         <div class="form-value">
           <div action="">
-            <h2>Sign <span style="color: dodgerblue;">In</span></h2>
+            <h2>Sign <span style="color: orangered">Up</span></h2>
             <!-- Input para Email -->
             <div class="inputbox">
               <ion-icon name="mail-outline"></ion-icon>
-              <input id="email" type="email" required />
+              <input
+                id="email"
+                type="email"
+                value="teste@exemplo.com"
+                readonly
+              />
               <label for="email">Email:</label>
             </div>
             <!-- Input para a senha-->
             <div class="inputbox">
               <ion-icon name="eye-off-outline"></ion-icon>
-              <input id="password" type="password" style="color: dodgerblue;" required />
+              <input
+                id="password"
+                type="password"
+                value="123"
+                style="color: orangered"
+                readonly
+              />
               <label for="password">Password:</label>
             </div>
-
-            <div class="forget">
-              <!-- Checkbox para lembrar o login do usuário e recuperar a senha-->
-              <label for=""
-                ><input type="checkbox" />Remember Me! -
-                <a href="#">Forget Password?</a></label
-              >
-            </div>
             <!-- Botão para logar no site -->
-            <button id="btn_proceed">Continue</button>
-            <!-- Área perguntando se o usuário ainda não tem uma conta no site -->
-            <div class="register">
-              <p>Don't have an account yet? <a href="register.html">Register!</a></p>
-            </div>
+            <button id="btn_create">
+              <a href="index.html">Create Account </a>
+            </button>
           </div>
         </div>
       </div>
