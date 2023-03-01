@@ -1,6 +1,7 @@
 // Declarando constante os botões
-const btn_proceed = document.getElementById("btn_proceed");
-const btn_create = document.getElementById("btn_create")
+const btn_proceed = document.getElementById("proceed");
+const btn_create = document.getElementById("create");
+const secret = document.getElementById("secret");
 
 // Caso o botão seja clicado, vai executar uma arrow function
 btn_proceed.addEventListener("click", () => {
@@ -32,4 +33,5 @@ btn_proceed.addEventListener("click", () => {
 
 btn_create.addEventListener("click", ()=>{
   alert("conta criada")
-})
+});
+

@@ -12,7 +12,7 @@
       <div class="form-box">
         <div class="form-value">
           <div action="">
-            <h2>Sign <span style="color: dodgerblue;">In</span></h2>
+            <h2>Sign <span style="color: dodgerblue">In</span></h2>
             <!-- Input para Email -->
             <div class="inputbox">
               <ion-icon name="mail-outline"></ion-icon>
@@ -21,8 +21,13 @@
             </div>
             <!-- Input para a senha-->
             <div class="inputbox">
-              <ion-icon name="eye-off-outline"></ion-icon>
-              <input id="password" type="password" style="color: dodgerblue;" required />
+              <ion-icon id="secret" name="eye-off-outline"></ion-icon>
+              <input
+                id="password"
+                type="password"
+                style="color: dodgerblue"
+                required
+              />
               <label for="password">Password:</label>
             </div>
 
@@ -34,10 +39,12 @@
               >
             </div>
             <!-- Botão para logar no site -->
-            <button id="btn_proceed">Continue</button>
+            <button id="proceed">Continue</button>
             <!-- Área perguntando se o usuário ainda não tem uma conta no site -->
             <div class="register">
-              <p>Don't have an account yet? <a href="register.html">Register!</a></p>
+              <p>
+                Don't have an account yet? <a href="register.html">Register!</a>
+              </p>
             </div>
           </div>
         </div>
